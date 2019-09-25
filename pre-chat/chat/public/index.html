@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Socket.IO Chat Example</title>
+  <title>Socket.IO Chat</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <center>
+  <h1>CHAT</h1>
+  </center>
+  <div>
   <ul class="pages">
     <li class="chat page">
+      <center>
       <div class="chatArea">
         <ul class="messages"></ul>
       </div>
+      </center>
       <input class="inputMessage" placeholder="Type here..."/>
     </li>
     <li class="login page">
       <div class="form">
         <h3 class="title">What's your nickname?</h3>
-        <input class="usernameInput" type="text" maxlength="14" />
+        <input class="usernameInput" type="text" maxlength="14"style="color:aqua"/>
       </div>
     </li>
   </ul>
+  </div>
 
+  <div>
+
+  </div>
+  </body>
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script src="/main.js"></script>

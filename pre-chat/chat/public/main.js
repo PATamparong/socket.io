@@ -28,9 +28,9 @@ $(function() {
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
-      message += "there's 1 participant";
+      message += "1 participant is online";
     } else {
-      message += "there are " + data.numUsers + " participants";
+      message += "there are " + data.numUsers + " participants online";
     }
     log(message);
   }
@@ -102,7 +102,7 @@ $(function() {
   // Adds the visual chat typing message
   const addChatTyping = (data) => {
     data.typing = true;
-    data.message = 'is typing';
+    data.message = 'typing...';
     addChatMessage(data);
   }
 
@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', (data) => {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Socket.IO Chat – ";
+    var message = "Welcome ^_^ !!";
     log(message, {
       prepend: true
     });
